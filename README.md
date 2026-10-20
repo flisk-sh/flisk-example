@@ -34,6 +34,8 @@ You declare the service. TDK discovers the landscape, resolves dependencies, all
 
 ## Run It
 
+> **Repository-pinned CLI (optional):** Run `bun install` from the repository root to install the version pinned in `package.json`. Use `bun run tdk:project` to initialize project config, `bun run tdk:dry-run` to preview startup, or `bun run tdk:up -- <stack>` to start a stack. The global npm and standalone binary installation paths remain available.
+
 ### Prerequisites
 
 - [Docker](https://docs.docker.com/get-docker/) is running.
@@ -48,7 +50,7 @@ tdk project --yes
 tdk up
 ```
 
-`tdk project --yes` creates the project configuration and discovers the existing `service.json` manifests. TDK then starts both stacks. There is no root package to install; each resource owns its own package and generated development workflow.
+`tdk project --yes` creates the project configuration and discovers the existing `service.json` manifests. TDK then starts both stacks. Each resource owns its own package and generated development workflow; the root package provides optional project-pinned TDK CLI scripts.
 
 ```bash
 # Start one stack only
