@@ -162,8 +162,8 @@ function App() {
       <footer style={{ textAlign: 'center', marginTop: '40px', color: '#666', fontSize: '14px' }}>
         <p>Built with 💚 using TDK CLI + Tilt + Bun + Hono + React</p>
         <p>
-          <a href="https://github.com/tdk-landscape/tdk-cli" style={{ color: '#e94560' }}>
-            github.com/tdk-landscape/tdk-cli
+          <a href="https://github.com/flisk-sh/tdk-cli" style={{ color: '#e94560' }}>
+            github.com/flisk-sh/tdk-cli
           </a>
         </p>
       </footer>
