@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="560" viewBox="0 0 1600 560" role="img" aria-labelledby="title desc">
-  <title id="title">TDK Example</title>
+  <title id="title">Flisk Example</title>
   <desc id="desc">Reference Project-Stack-Resource landscape. Two stacks, four resources, generated config per service.</desc>
   <defs>
     <radialGradient id="orbV" cx="82%" cy="8%" r="55%">
@@ -32,7 +32,7 @@
   <rect width="1600" height="560" filter="url(#grain)" opacity="0.55"/>
   <rect x="0.5" y="0.5" width="1599" height="559" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
 
-  <text x="72" y="64" fill="#ececf1" fill-opacity="0.42" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="0.42em">TDK LANDSCAPE</text>
+  <text x="72" y="64" fill="#ececf1" fill-opacity="0.42" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="0.42em">Flisk LANDSCAPE</text>
   <text x="1528" y="64" text-anchor="end" fill="#ececf1" fill-opacity="0.32" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="0.28em">REFERENCE</text>
 
   <text x="72" y="250" fill="#f7f7f4" font-family="ui-serif, Georgia, 'Times New Roman', serif" font-size="92" letter-spacing="-0.04em">Example.</text>
@@ -41,7 +41,7 @@
 
   <g transform="translate(72 430)">
     <rect width="168" height="44" rx="22" fill="#f7f7f4"/>
-    <text x="84" y="28" text-anchor="middle" fill="#07070b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">tdk up</text>
+    <text x="84" y="28" text-anchor="middle" fill="#07070b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">flisk up</text>
     <rect x="184" width="188" height="44" rx="22" fill="none" stroke="#ffffff" stroke-opacity="0.28"/>
     <text x="278" y="28" text-anchor="middle" fill="#f7f7f4" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">two stacks</text>
   </g>

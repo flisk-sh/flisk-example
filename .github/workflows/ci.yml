@@ -1,4 +1,4 @@
-name: 🧪 TDK Example CI
+name: 🧪 Flisk Example CI
 
 on:
   pull_request:
@@ -10,12 +10,12 @@ permissions:
   contents: read
 
 concurrency:
-  group: tdk-ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  group: flisk-ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
   doctor:
-    name: 🩺 TDK doctor
+    name: 🩺 Flisk doctor
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -32,7 +32,7 @@ jobs:
           sudo systemctl stop postgresql.service 'postgresql@*.service' 2>/dev/null || true
           sudo DEBIAN_FRONTEND=noninteractive apt-get remove --purge -y 'postgresql*' >/dev/null 2>&1 || true
           sudo fuser -k 5432/tcp 2>/dev/null || true
-      - name: Install TDK
+      - name: Install Flisk
         run: npm install --global @flisk-sh/flisk@latest
       - name: Generate project configuration
         run: flisk project --yes
@@ -40,7 +40,7 @@ jobs:
         run: flisk doctor --no-ping
 
   e2e:
-    name: 🧪 TDK end-to-end smoke test
+    name: 🧪 Flisk end-to-end smoke test
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
@@ -57,7 +57,7 @@ jobs:
           sudo systemctl stop postgresql.service 'postgresql@*.service' 2>/dev/null || true
           sudo DEBIAN_FRONTEND=noninteractive apt-get remove --purge -y 'postgresql*' >/dev/null 2>&1 || true
           sudo fuser -k 5432/tcp 2>/dev/null || true
-      - name: Install TDK
+      - name: Install Flisk
         run: npm install --global @flisk-sh/flisk@latest
       - name: Generate project configuration
         run: flisk project --yes
