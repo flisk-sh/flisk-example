@@ -2,7 +2,7 @@
 # =============================================================================
 # 🎨 PROJECT SPEC - Discovery Overrides
 # =============================================================================
-# Read by tdk-cli's discovery/constants.star (via TDK_PROJECT_ROOT) to scan
+# Read by flisk-cli's discovery/constants.star (via FLISK_PROJECT_ROOT) to scan
 # this project's actual service layout instead of the beauty-crm defaults
 # (services/product, services/platform, shared-product-engineering, ...).
 

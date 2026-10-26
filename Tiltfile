@@ -4,14 +4,14 @@
 # Must be set before the extension loads: discovery/constants.star reads it to
 # find this project's spec.master (services/identity, services/appointment)
 # instead of falling back to the beauty-crm monorepo's default scan roots.
-os.environ['TDK_PROJECT_ROOT'] = config.main_dir
+os.environ['FLISK_PROJECT_ROOT'] = config.main_dir
 
 # Load Flisk extension
-v1alpha1.extension_repo(name='tdk-cli', url='https://github.com/flisk-sh/flisk')
-v1alpha1.extension(name='tdk-cli', repo_name='tdk-cli', repo_path='')
+v1alpha1.extension_repo(name='flisk-cli', url='https://github.com/flisk-sh/flisk')
+v1alpha1.extension(name='flisk-cli', repo_name='flisk-cli', repo_path='')
 
 # Load Flisk utilities
-load('ext://tdk-cli', 'Utils', 'Manifest', 'Config')
+load('ext://flisk-cli', 'Utils', 'Manifest', 'Config')
 
 print("🚀 Flisk Example Project")
 print("   Project → Stack → Resource")

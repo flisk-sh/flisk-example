@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const IDENTITY_API_URL = import.meta.env.VITE_IDENTITY_API_URL || 'http://api.tdk-example.localhost/api/identity'
+const IDENTITY_API_URL = import.meta.env.VITE_IDENTITY_API_URL || 'http://api.flisk-example.localhost/api/identity'
 
 function App() {
   const [users, setUsers] = useState<Array<{ id: number; email: string; name: string }>>([])
@@ -79,7 +79,7 @@ function App() {
           🔐 Identity App
         </h1>
         <p style={{ color: '#a0a0a0' }}>
-          TDK Example - User Management Dashboard
+          Flisk Example - User Management Dashboard
         </p>
       </div>
 
@@ -160,7 +160,7 @@ function App() {
       </div>
 
       <footer style={{ textAlign: 'center', marginTop: '40px', color: '#666', fontSize: '14px' }}>
-        <p>Built with 💚 using TDK CLI + Tilt + Bun + Hono + React</p>
+        <p>Built with 💚 using Flisk CLI + Tilt + Bun + Hono + React</p>
         <p>
           <a href="https://github.com/flisk-sh/flisk" style={{ color: '#e94560' }}>
             github.com/flisk-sh/flisk

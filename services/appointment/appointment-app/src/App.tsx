@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const APPOINTMENT_API_URL = import.meta.env.VITE_APPOINTMENT_API_URL || 'http://api.tdk-example.localhost/api/appointment'
+const APPOINTMENT_API_URL = import.meta.env.VITE_APPOINTMENT_API_URL || 'http://api.flisk-example.localhost/api/appointment'
 
 function App() {
   const [appointments, setAppointments] = useState<Array<{ id: number; title: string; time: string }>>([])
@@ -20,7 +20,7 @@ function App() {
     <div style={{ maxWidth: '800px', margin: '0 auto', padding: '40px 20px' }}>
       <div style={{ textAlign: 'center', marginBottom: '40px' }}>
         <h1 style={{ fontSize: '2.5rem', marginBottom: '8px' }}>📅 Appointment App</h1>
-        <p style={{ color: '#a0a0a0' }}>TDK Example - Scheduling Dashboard</p>
+        <p style={{ color: '#a0a0a0' }}>Flisk Example - Scheduling Dashboard</p>
       </div>
 
       <div style={{ background: '#16213e', borderRadius: '12px', padding: '24px' }}>
@@ -48,7 +48,7 @@ function App() {
       </div>
 
       <footer style={{ textAlign: 'center', marginTop: '40px', color: '#666' }}>
-        <p>Built with 💚 using TDK CLI</p>
+        <p>Built with 💚 using Flisk CLI</p>
       </footer>
     </div>
   )
