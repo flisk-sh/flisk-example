@@ -18,7 +18,7 @@
     "@hono/node-server": "^1.8.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.5.0",
+    "@biomejs/biome": "^2.6.6",
     "@types/bun": "latest",
     "typescript": "^5.4.0",
     "vitest": "^3.2.6"
