@@ -4,15 +4,43 @@ updates:
     directory: "/services/appointment/appointment-api"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 1
+    groups:
+      minor-and-patch:
+        update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: "npm"
     directory: "/services/appointment/appointment-app"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 1
+    groups:
+      minor-and-patch:
+        update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: "npm"
     directory: "/services/identity/identity-api"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 1
+    groups:
+      minor-and-patch:
+        update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: "npm"
     directory: "/services/identity/identity-app"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 1
+    groups:
+      minor-and-patch:
+        update-types: ["minor", "patch"]
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
