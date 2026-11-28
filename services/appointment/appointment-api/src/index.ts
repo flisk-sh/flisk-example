@@ -18,7 +18,7 @@ app.get('/health/ready', (c) => c.json({ status: 'ready', timestamp: new Date().
 app.get('/', (c) => c.json({
   message: 'Appointment API',
   version: '1.0.0',
-  endpoints: ['/health', '/api/appointments', '/api/schedule'],
+  endpoints: ['/health', '/api/appointments'],
 }));
 
 app.get('/api/appointments', (c) => c.json({
